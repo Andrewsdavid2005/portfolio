@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrews GnanaSelvin D | Software Engineer</title>
+    <title>Andrews GnanaSelvin D | Software Engineer Portfolio</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
@@ -28,7 +30,11 @@
     </script>
 
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #F8FAFC; color: #334155; }
+        body { 
+            font-family: 'Inter', sans-serif; 
+            background-color: #F8FAFC; 
+            color: #334155; 
+        }
         .section-heading {
             font-size: 2rem;
             font-weight: 700;
@@ -48,49 +54,49 @@
             border-radius: 2px;
         }
         .card-hover {
-            transition: all 0.3s ease;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card-hover:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            transform: translateY(-6px);
+            box-shadow: 0 22px 30px -5px rgba(37, 99, 235, 0.06), 0 12px 15px -5px rgba(0, 0, 0, 0.03);
         }
     </style>
 </head>
 <body class="antialiased selection:bg-brandPrimary selection:text-white">
 
-    <header class="fixed top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50">
+    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
         <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#" class="text-xl font-bold text-brandDark tracking-tight">Andrews<span class="text-brandPrimary">.</span></a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-500">
                 <a href="#about" class="hover:text-brandPrimary transition-colors">About</a>
                 <a href="#skills" class="hover:text-brandPrimary transition-colors">Skills</a>
                 <a href="#experience" class="hover:text-brandPrimary transition-colors">Experience</a>
                 <a href="#projects" class="hover:text-brandPrimary transition-colors">Projects</a>
                 <a href="#contact" class="hover:text-brandPrimary transition-colors">Contact</a>
             </nav>
-            <a href="./resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-brandPrimary rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
+            <a href="assets/resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-brandPrimary rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
                 Download Resume
             </a>
         </div>
     </header>
 
-    <section class="pt-40 pb-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+    <section id="about" class="pt-44 pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <div class="flex-1 space-y-6">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-brandPrimary text-xs font-semibold tracking-wide uppercase">
+            <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-brandPrimary text-xs font-semibold tracking-wide uppercase border border-blue-100">
                 B.E. Computer Science & Engineering
             </div>
             <h1 class="text-5xl md:text-6xl font-extrabold text-brandDark leading-tight tracking-tight">
-                Hi, I'm <span class="text-brandPrimary">Andrews</span> <br> GnanaSelvin D.
+                Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-brandPrimary to-blue-700">Andrews</span> <br> GnanaSelvin D.
             </h1>
             <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                Computer Science and Engineering student with interests in <strong class="text-gray-800">Network Engineering, Web Development, and Artificial Intelligence</strong>. Skilled in Python, Java, and web technologies with hands-on experience in Smart India Hackathon projects & AI Training.
+                Computer Science and Engineering student with interests in <strong class="text-gray-800 font-semibold">Network Engineering, Web Development, and Artificial Intelligence</strong>. Skilled in Python, Java, and web technologies with hands-on experience in Smart India Hackathon projects & AI Training.
             </p>
             <div class="pt-4 flex flex-wrap gap-4">
-                <a href="#projects" class="px-8 py-3.5 bg-brandDark text-white font-medium rounded-lg hover:bg-gray-800 transition-colors shadow-lg">
+                <a href="#projects" class="px-8 py-3.5 bg-brandDark text-white font-medium rounded-lg hover:bg-gray-800 transition-colors shadow-md">
                     View My Work
                 </a>
-                <a href="./resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="px-8 py-3.5 bg-white border border-gray-300 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors shadow-sm inline-flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-red-500"></i> Get Resume
+                <a href="assets/resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="px-8 py-3.5 bg-white border border-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors shadow-sm inline-flex items-center gap-2">
+                    <i class="fa-solid fa-file-pdf text-red-500"></i> Download Resume
                 </a>
             </div>
             <div class="pt-6 flex gap-5 text-gray-400">
@@ -101,7 +107,7 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-white border-y border-gray-100">
+    <section id="skills" class="py-24 bg-white border-y border-gray-100">
         <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
             
             <div>
@@ -126,78 +132,79 @@
                 <h2 class="section-heading">Technical Matrix</h2>
                 <div class="space-y-6">
                     <div>
-                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Programming & Web</h4>
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Programming & Web</h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Python</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Java</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">SQL</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Dart (Flutter)</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">HTML/CSS & JS</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">UI/UX</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Python</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Java</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">SQL</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Dart (Flutter)</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">HTML/CSS & JS</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">UI/UX</span>
                         </div>
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Backend & Database</h4>
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Backend & Database</h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-100 rounded-md text-sm font-medium">APIs</span>
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-100 rounded-md text-sm font-medium">Firebase</span>
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-100 rounded-md text-sm font-medium">MySQL & SQLite</span>
-                            <span class="px-3 py-1.5 bg-blue-50 text-blue-700 border border-blue-100 rounded-md text-sm font-medium">ML Kit Integration</span>
+                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">APIs</span>
+                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">Firebase</span>
+                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">MySQL & SQLite</span>
+                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">ML Kit Integration</span>
                         </div>
                     </div>
                     <div>
-                        <h4 class="text-sm font-bold text-gray-400 uppercase tracking-wider mb-3">Cloud, Networks & Tools</h4>
+                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Cloud, Networks & Tools</h4>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">AWS</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Microsoft Azure</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">IPs & Firewalls</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Git & GitHub</span>
-                            <span class="px-3 py-1.5 bg-gray-100 text-gray-700 rounded-md text-sm font-medium">Cisco Packet Tracer</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">AWS</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Microsoft Azure</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">IPs & Firewalls</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Git & GitHub</span>
+                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Cisco Packet Tracer</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </div>
     </section>
 
-    <section id="experience" class="py-20 max-w-6xl mx-auto px-6">
+    <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
         <h2 class="section-heading text-center mx-auto block w-max">Professional Experience</h2>
         
-        <div class="mt-12 space-y-8 max-w-4xl mx-auto">
+        <div class="mt-12 space-y-6 max-w-4xl mx-auto">
             
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
+            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
                 <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md">May 2025</span>
+                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">May 2025</span>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brandDark">Machine Learning Internship</h3>
-                    <p class="text-brandPrimary font-medium mt-1">Galwin Technology</p>
+                    <p class="text-brandPrimary font-medium text-sm mt-0.5">Galwin Technology</p>
                     <p class="text-gray-600 mt-3 text-sm leading-relaxed">
                         Gained hands-on experience in machine learning models and data analysis.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
+            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
                 <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md">Aug 2024</span>
+                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">Aug 2024</span>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brandDark">Web Development Internship</h3>
-                    <p class="text-brandPrimary font-medium mt-1">ABM IT Support</p>
+                    <p class="text-brandPrimary font-medium text-sm mt-0.5">ABM IT Support</p>
                     <p class="text-gray-600 mt-3 text-sm leading-relaxed">
                         Worked on responsive web pages and improved user interface functionality.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
+            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
                 <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md">Feb 2024</span>
+                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">Feb 2024</span>
                 </div>
                 <div>
                     <h3 class="text-xl font-bold text-brandDark">Program Development Internship</h3>
-                    <p class="text-brandPrimary font-medium mt-1">SoftwareTech Solutions</p>
+                    <p class="text-brandPrimary font-medium text-sm mt-0.5">SoftwareTech Solutions</p>
                     <p class="text-gray-600 mt-3 text-sm leading-relaxed">
                         Assisted in developing and testing software modules using programming concepts.
                     </p>
@@ -207,7 +214,7 @@
         </div>
     </section>
 
-    <section id="projects" class="py-20 bg-white border-y border-gray-100">
+    <section id="projects" class="py-24 bg-white border-y border-gray-100">
         <div class="max-w-6xl mx-auto px-6">
             <h2 class="section-heading">Featured Projects</h2>
             
@@ -221,10 +228,10 @@
                             Developed an AI-powered system that analyzes soil nutrients (NPK, pH) and seasonal data to recommend high-yielding crops for farmers. Engineered offline-first functionality for remote access.
                         </p>
                     </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200 flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Python & ML</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Flutter</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Firebase</span>
+                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Python & ML</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Flutter</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Firebase</span>
                     </div>
                 </div>
 
@@ -236,10 +243,10 @@
                             Built a gamified platform with rewards and progress tracking. Upgraded to Android SDK 36. Integrated Supabase for real-time authentication and Google ML Kit.
                         </p>
                     </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200 flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Flutter & Dart</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Supabase</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Google ML Kit</span>
+                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Flutter & Dart</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Supabase</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Google ML Kit</span>
                     </div>
                 </div>
 
@@ -251,10 +258,10 @@
                             Developed a Data Download Duplication Alert System to identify and manage duplicate file downloads efficiently. Implemented MD5 & SHA-256 hashing algorithms to prevent redundant storage.
                         </p>
                     </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200 flex flex-wrap gap-2">
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">Python</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">SQLite</span>
-                        <span class="text-xs font-semibold text-gray-500 bg-white px-2 py-1 rounded border border-gray-200">MD5 / SHA-256</span>
+                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Python</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">SQLite</span>
+                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">MD5 / SHA-256</span>
                     </div>
                 </div>
 
@@ -262,46 +269,46 @@
         </div>
     </section>
 
-    <section class="py-20 max-w-6xl mx-auto px-6">
+    <section class="py-24 max-w-6xl mx-auto px-6">
         <h2 class="section-heading">Certifications & Achievements</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
             <ul class="space-y-4">
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
                     <span><strong>Microsoft Azure Fundamentals</strong> (AZ-900)</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
                     <span><strong>AWS Cloud Foundations</strong></span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
                     <span><strong>CISCO Networking Essentials</strong> & Basics</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
                     <span><strong>Simplilearn</strong> - Machine Learning Certificate</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
                     <span><strong>NPTEL</strong> - Software Testing Certificate</span>
                 </li>
             </ul>
             <ul class="space-y-4">
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-trophy text-yellow-500 mt-1"></i>
                     <span><strong>Smart India Hackathon 2025</strong> - Finalist Certificate</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-trophy text-yellow-500 mt-1"></i>
                     <span><strong>Taiwan Hackathon</strong> - Certificate of Merit (Excellence)</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-medal text-brandPrimary mt-1"></i>
                     <span><strong>International Conference</strong> - Participant (KIT)</span>
                 </li>
-                <li class="flex items-start gap-3 text-gray-700">
+                <li class="flex items-start gap-3 text-gray-700 text-sm">
                     <i class="fa-solid fa-medal text-brandPrimary mt-1"></i>
                     <span><strong>Deloitte</strong> - Data Analytics Simulation Certificate</span>
                 </li>
@@ -312,7 +319,7 @@
     <footer id="contact" class="bg-brandDark text-white py-16 border-t border-gray-800 mt-10">
         <div class="max-w-6xl mx-auto px-6 text-center">
             <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto">
+            <p class="text-gray-400 mb-8 max-w-xl mx-auto text-sm">
                 Currently open for new opportunities in Software Engineering, Cloud Architecture, and Web Development. 
             </p>
             
@@ -326,11 +333,11 @@
             </div>
 
             <div class="flex justify-center gap-6 mb-12">
-                <a href="https://github.com/Andrewsdavid2005" target="_blank" class="text-gray-400 hover:text-white text-2xl transition-colors"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andrews-gnana-selvin-d/" target="_blank" class="text-gray-400 hover:text-blue-500 text-2xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Andrewsdavid2005" target="_blank" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/andrews-gnana-selvin-d/" target="_blank" class="text-gray-400 hover:text-blue-500 text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
             </div>
 
-            <p class="text-gray-600 text-sm">
+            <p class="text-gray-500 text-xs">
                 &copy; 2026 Andrews GnanaSelvin D. All rights reserved.
             </p>
         </div>
