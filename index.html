@@ -3,343 +3,323 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrews GnanaSelvin D | Software Engineer Portfolio</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Keerthana G | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
+                        serif: ['"Times New Roman"', 'Times', 'serif'],
                     },
                     colors: {
-                        brandPrimary: '#2563EB',
-                        brandDark: '#0F172A',
-                        brandLight: '#F8FAFC',
+                        brand: {
+                            dark: '#0b0f19',
+                            card: '#131c2e',
+                            accent: '#38bdf8',
+                            textMuted: '#94a3b8'
+                        }
                     }
                 }
             }
         }
     </script>
-
-    <style>
-        body { 
-            font-family: 'Inter', sans-serif; 
-            background-color: #F8FAFC; 
-            color: #334155; 
-        }
-        .section-heading {
-            font-size: 2rem;
-            font-weight: 700;
-            color: #0F172A;
-            margin-bottom: 3rem;
-            position: relative;
-            display: inline-block;
-        }
-        .section-heading::after {
-            content: '';
-            position: absolute;
-            width: 40%;
-            height: 4px;
-            bottom: -10px;
-            left: 0;
-            background-color: #2563EB;
-            border-radius: 2px;
-        }
-        .card-hover {
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        .card-hover:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 22px 30px -5px rgba(37, 99, 235, 0.06), 0 12px 15px -5px rgba(0, 0, 0, 0.03);
-        }
-    </style>
 </head>
-<body class="antialiased selection:bg-brandPrimary selection:text-white">
+<body class="bg-brand-dark text-slate-200 font-serif antialiased selection:bg-brand-accent selection:text-brand-dark">
 
-    <header class="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-gray-100 z-50">
-        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#" class="text-xl font-bold text-brandDark tracking-tight">Andrews<span class="text-brandPrimary">.</span></a>
-            <nav class="hidden md:flex space-x-8 text-sm font-medium text-gray-500">
-                <a href="#about" class="hover:text-brandPrimary transition-colors">About</a>
-                <a href="#skills" class="hover:text-brandPrimary transition-colors">Skills</a>
-                <a href="#experience" class="hover:text-brandPrimary transition-colors">Experience</a>
-                <a href="#projects" class="hover:text-brandPrimary transition-colors">Projects</a>
-                <a href="#contact" class="hover:text-brandPrimary transition-colors">Contact</a>
-            </nav>
-            <a href="assets/resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="hidden md:inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-brandPrimary rounded-lg hover:bg-blue-700 transition-colors shadow-sm">
-                Download Resume
+    <header class="sticky top-0 z-50 bg-brand-dark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-wide text-white italic">
+                Keerthana <span class="text-brand-accent">G</span>
             </a>
+            <nav class="hidden md:flex space-x-8 text-base">
+                <a href="#about" class="hover:text-brand-accent transition duration-300">About</a>
+                <a href="#education" class="hover:text-brand-accent transition duration-300">Education</a>
+                <a href="#skills" class="hover:text-brand-accent transition duration-300">Skills</a>
+                <a href="#experience" class="hover:text-brand-accent transition duration-300">Experience</a>
+                <a href="#projects" class="hover:text-brand-accent transition duration-300">Projects</a>
+                <a href="#certifications" class="hover:text-brand-accent transition duration-300">Certifications</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <a href="keerthana_Resume_.pdf" download class="hidden sm:inline-flex items-center text-slate-300 hover:text-brand-accent transition duration-300 text-sm border border-slate-700 hover:border-brand-accent px-4 py-2 rounded">
+                    <i class="fas fa-file-download mr-2"></i>Resume
+                </a>
+                <a href="mailto:ggkeerthana8@gmail.com" class="bg-brand-accent hover:bg-sky-500 text-brand-dark px-5 py-2 rounded transition duration-300 text-sm font-bold tracking-wide">
+                    Contact Me
+                </a>
+            </div>
         </div>
     </header>
 
-    <section id="about" class="pt-44 pb-24 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="flex-1 space-y-6">
-            <div class="inline-block px-4 py-1.5 rounded-full bg-blue-50 text-brandPrimary text-xs font-semibold tracking-wide uppercase border border-blue-100">
-                B.E. Computer Science & Engineering
-            </div>
-            <h1 class="text-5xl md:text-6xl font-extrabold text-brandDark leading-tight tracking-tight">
-                Hi, I'm <span class="bg-clip-text text-transparent bg-gradient-to-r from-brandPrimary to-blue-700">Andrews</span> <br> GnanaSelvin D.
-            </h1>
-            <p class="text-lg text-gray-600 max-w-2xl leading-relaxed">
-                Computer Science and Engineering student with interests in <strong class="text-gray-800 font-semibold">Network Engineering, Web Development, and Artificial Intelligence</strong>. Skilled in Python, Java, and web technologies with hands-on experience in Smart India Hackathon projects & AI Training.
-            </p>
-            <div class="pt-4 flex flex-wrap gap-4">
-                <a href="#projects" class="px-8 py-3.5 bg-brandDark text-white font-medium rounded-lg hover:bg-gray-800 transition-colors shadow-md">
-                    View My Work
-                </a>
-                <a href="assets/resume.pdf" download="Andrews_GnanaSelvin_Resume.pdf" class="px-8 py-3.5 bg-white border border-gray-200 text-gray-700 font-medium rounded-lg hover:bg-gray-50 transition-colors shadow-sm inline-flex items-center gap-2">
-                    <i class="fa-solid fa-file-pdf text-red-500"></i> Download Resume
-                </a>
-            </div>
-            <div class="pt-6 flex gap-5 text-gray-400">
-                <a href="mailto:andrewsdavidnov@gmail.com" class="hover:text-brandPrimary transition-colors"><i class="fa-solid fa-envelope text-xl"></i></a>
-                <a href="https://www.linkedin.com/in/andrews-gnana-selvin-d/" target="_blank" class="hover:text-blue-600 transition-colors"><i class="fa-brands fa-linkedin text-xl"></i></a>
-                <a href="https://github.com/Andrewsdavid2005" target="_blank" class="hover:text-gray-900 transition-colors"><i class="fa-brands fa-github text-xl"></i></a>
+    <section class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36 flex flex-col justify-center min-h-[calc(100vh-5rem)]">
+        <p class="text-brand-accent italic text-lg mb-3 tracking-wide">Welcome to my professional portfolio</p>
+        <h1 class="text-5xl sm:text-7xl font-bold text-white tracking-tight mb-4">
+            Keerthana G.
+        </h1>
+        <h2 class="text-2xl sm:text-4xl font-semibold text-brand-textMuted mb-6 italic">
+            Bridging Cloud Architecture, Artificial Intelligence, and User-Centric Design
+        </h2>
+        <p class="max-w-2xl text-xl text-slate-300 mb-10 leading-relaxed">
+            Dedicated Computer Science and Engineering student with practical internship experience across AI development and UI/UX engineering. Adept at building robust web structures, navigating complex cloud environments, and engineering smart algorithmic solutions to real-world complexities.
+        </p>
+        <div class="flex flex-wrap items-center gap-6">
+            <a href="#projects" class="bg-brand-accent hover:bg-sky-500 text-brand-dark px-8 py-3 rounded font-bold text-base shadow-lg transition duration-300">
+                Explore My Projects
+            </a>
+            <a href="keerthana_Resume_.pdf" download class="border border-slate-600 hover:border-brand-accent text-slate-300 hover:text-white px-8 py-3 rounded font-semibold text-base transition duration-300 inline-flex items-center">
+                <i class="fas fa-download mr-2 text-brand-accent"></i> Download Resume
+            </a>
+            <div class="flex items-center space-x-5 text-2xl ml-2">
+                <a href="https://github.com/keerthana242" target="_blank" class="text-brand-textMuted hover:text-white transition" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/keerthana-g-gurueswaran-0202922a6/" target="_blank" class="text-brand-textMuted hover:text-white transition" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:ggkeerthana8@gmail.com" class="text-brand-textMuted hover:text-white transition" title="Email"><i class="fas fa-envelope"></i></a>
+                <span class="text-brand-textMuted text-base tracking-wide border-l border-slate-700 pl-5"><i class="fas fa-phone text-brand-accent mr-2"></i>+91 8248929638</span>
             </div>
         </div>
     </section>
 
-    <section id="skills" class="py-24 bg-white border-y border-gray-100">
-        <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-16">
-            
-            <div>
-                <h2 class="section-heading">Education</h2>
-                <div class="space-y-8">
-                    <div class="relative pl-6 border-l-2 border-brandPrimary">
-                        <div class="absolute -left-[9px] top-1 w-4 h-4 bg-brandPrimary rounded-full border-4 border-white"></div>
-                        <h3 class="text-xl font-bold text-brandDark">Karpagam Institute of Technology</h3>
-                        <p class="text-brandPrimary font-medium text-sm mt-1">B.E. Computer Science and Engineering</p>
-                        <p class="text-gray-500 text-sm mt-1">2023 - 2027 | CGPA: 7.6</p>
-                    </div>
-                    <div class="relative pl-6 border-l-2 border-gray-200">
-                        <div class="absolute -left-[9px] top-1 w-4 h-4 bg-gray-300 rounded-full border-4 border-white"></div>
-                        <h3 class="text-lg font-bold text-brandDark">SFS Matriculation Higher Secondary School</h3>
-                        <p class="text-gray-600 font-medium text-sm mt-1">Higher Secondary</p>
-                        <p class="text-gray-500 text-sm mt-1">2022 - 2023 | 70%</p>
-                    </div>
+    <section id="about" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="md:col-span-1">
+                <h2 class="text-3xl font-bold text-white tracking-wide border-b border-brand-accent pb-2 inline-block">Executive Profile</h2>
+            </div>
+            <div class="md:col-span-2 text-slate-300 text-lg space-y-5 leading-relaxed">
+                <p>
+                    I am currently pursuing a Bachelor of Engineering in Computer Science and Engineering at <strong>Karpagam Institute of Technology, Coimbatore</strong>. My academic and technical journey is driven by a commitment to analytical excellence, collaborative problem-solving, and continuous learning.
+                </p>
+                <p>
+                    Through high-velocity hackathons and focused industry training, I have consolidated a robust framework encompassing backend databases, responsive frontends, and dynamic cloud tools. 
+                </p>
+                <div class="bg-brand-card p-5 rounded border border-slate-800 text-slate-200 shadow-inner">
+                    <span class="text-brand-accent font-bold text-xl"><i class="fas fa-trophy mr-2"></i>Distinction Note:</span> 
+                    Recognized as a National Finalist at the prestigious Smart India Hackathon 2025 at IIT Dhanbad.
                 </div>
             </div>
-
-            <div>
-                <h2 class="section-heading">Technical Matrix</h2>
-                <div class="space-y-6">
-                    <div>
-                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Programming & Web</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Python</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Java</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">SQL</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Dart (Flutter)</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">HTML/CSS & JS</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">UI/UX</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Backend & Database</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">APIs</span>
-                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">Firebase</span>
-                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">MySQL & SQLite</span>
-                            <span class="px-3 py-1.5 bg-blue-50/50 text-blue-700 border border-blue-100 rounded-lg text-xs font-medium hover:bg-blue-50 transition-colors cursor-default">ML Kit Integration</span>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xs font-bold text-gray-400 uppercase tracking-wider mb-3">Cloud, Networks & Tools</h4>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">AWS</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Microsoft Azure</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">IPs & Firewalls</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Git & GitHub</span>
-                            <span class="px-3 py-1.5 bg-gray-50 text-gray-700 border border-gray-200/60 rounded-lg text-xs font-medium hover:border-brandPrimary/30 transition-colors cursor-default">Cisco Packet Tracer</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
         </div>
     </section>
 
-    <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
-        <h2 class="section-heading text-center mx-auto block w-max">Professional Experience</h2>
-        
-        <div class="mt-12 space-y-6 max-w-4xl mx-auto">
+    <section id="education" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white mb-12"><i class="fas fa-graduation-cap text-brand-accent mr-3"></i>Education Background</h2>
+        <div class="space-y-10 relative before:absolute before:inset-0 before:left-4 before:w-0.5 before:bg-slate-800">
             
-            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
-                <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">May 2025</span>
+            <div class="relative pl-12">
+                <div class="absolute left-2.5 top-2 w-3.5 h-3.5 bg-brand-accent rounded-full ring-4 ring-brand-dark"></div>
+                <span class="text-sm font-semibold text-brand-accent bg-brand-accent/10 px-3 py-1 rounded">2023 - 2027</span>
+                <h3 class="text-2xl font-bold text-white mt-2">B.E. Computer Science and Engineering</h3>
+                <p class="text-lg text-slate-300">Karpagam Institute of Technology, Coimbatore</p>
+                <p class="text-base text-brand-accent font-semibold mt-1">Cumulative GPA: 8.6</p>
+            </div>
+
+            <div class="relative pl-12">
+                <div class="absolute left-2.5 top-2 w-3.5 h-3.5 bg-brand-accent rounded-full ring-4 ring-brand-dark"></div>
+                <span class="text-sm font-semibold text-brand-accent bg-brand-accent/10 px-3 py-1 rounded">2022 - 2023</span>
+                <h3 class="text-2xl font-bold text-white mt-2">Higher Secondary Certification</h3>
+                <p class="text-lg text-slate-300">Sri Vidhya Matric Hr. Sec School, Sivakasi</p>
+                <p class="text-base text-brand-accent font-semibold mt-1">Aggregate Score: 87%</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white mb-12"><i class="fas fa-layer-group text-brand-accent mr-3"></i>Technical Competencies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-code mr-2"></i>Core Programming</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">C</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Python</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Java</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">SQL</span>
                 </div>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-desktop mr-2"></i>Frontend & Design</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">HTML</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">CSS</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">JavaScript</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">UI/UX Design</span>
+                </div>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-cloud-upload-alt mr-2"></i>Cloud Architecture</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Microsoft Azure</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">AWS (EC2, Lambda)</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">AWS CLI</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">API Gateway</span>
+                </div>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-database mr-2"></i>Backend & Data</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">MySQL</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Firebase</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Relational Databases</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">REST APIs</span>
+                </div>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-tools mr-2"></i>Tools & Frameworks</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Git & GitHub</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Flutter</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">VS Code</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Cisco Packet Tracer</span>
+                </div>
+            </div>
+
+            <div class="bg-brand-card p-6 rounded border border-slate-800 shadow-sm">
+                <h3 class="text-xl font-bold text-brand-accent mb-4"><i class="fas fa-briefcase-clock mr-2"></i>Professional Strengths</h3>
+                <div class="flex flex-wrap gap-2 text-base text-slate-300">
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Leadership</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Team Integration</span>
+                    <span class="bg-brand-dark px-3 py-1 rounded border border-slate-800">Strategic Communication</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white mb-12"><i class="fas fa-chart-line text-brand-accent mr-3"></i>Professional Experience</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="bg-brand-card p-6 rounded border border-slate-800 flex flex-col justify-between shadow-md">
                 <div>
-                    <h3 class="text-xl font-bold text-brandDark">Machine Learning Internship</h3>
-                    <p class="text-brandPrimary font-medium text-sm mt-0.5">Galwin Technology</p>
-                    <p class="text-gray-600 mt-3 text-sm leading-relaxed">
-                        Gained hands-on experience in machine learning models and data analysis.
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Artificial Intelligence Intern</h3>
+                            <p class="text-brand-accent text-lg">New Technology Institutions</p>
+                        </div>
+                        <span class="text-sm font-semibold text-slate-400 bg-brand-dark px-3 py-1 rounded border border-slate-800">Aug 2024</span>
+                    </div>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Engineered functional Artificial Intelligence models and pipelines, translating structural conceptual frameworks into practical software assets.
                     </p>
                 </div>
             </div>
 
-            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
-                <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">Aug 2024</span>
-                </div>
+            <div class="bg-brand-card p-6 rounded border border-slate-800 flex flex-col justify-between shadow-md">
                 <div>
-                    <h3 class="text-xl font-bold text-brandDark">Web Development Internship</h3>
-                    <p class="text-brandPrimary font-medium text-sm mt-0.5">ABM IT Support</p>
-                    <p class="text-gray-600 mt-3 text-sm leading-relaxed">
-                        Worked on responsive web pages and improved user interface functionality.
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">UI/UX Engineering Intern</h3>
+                            <p class="text-brand-accent text-lg">Lamda Tech Softics</p>
+                        </div>
+                        <span class="text-sm font-semibold text-slate-400 bg-brand-dark px-3 py-1 rounded border border-slate-800">Jun 2025</span>
+                    </div>
+                    <p class="text-slate-300 text-base leading-relaxed">
+                        Designed, modeled, and structured intuitive interfaces across desktop and mobile form factors, optimizing overall visual flow and end-user engagement.
                     </p>
                 </div>
             </div>
-
-            <div class="bg-white p-8 rounded-2xl shadow-[0_2px_8px_-3px_rgba(0,0,0,0.05)] border border-gray-100 card-hover flex flex-col md:flex-row gap-6 items-start">
-                <div class="md:w-1/4 shrink-0">
-                    <span class="inline-block px-3 py-1 bg-gray-100 text-gray-600 text-xs font-bold rounded-md tracking-wide">Feb 2024</span>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold text-brandDark">Program Development Internship</h3>
-                    <p class="text-brandPrimary font-medium text-sm mt-0.5">SoftwareTech Solutions</p>
-                    <p class="text-gray-600 mt-3 text-sm leading-relaxed">
-                        Assisted in developing and testing software modules using programming concepts.
-                    </p>
-                </div>
-            </div>
-
         </div>
     </section>
 
-    <section id="projects" class="py-24 bg-white border-y border-gray-100">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="section-heading">Featured Projects</h2>
+    <section id="projects" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white mb-12"><i class="fas fa-folder-open text-brand-accent mr-3"></i>Engineering Case Studies</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
-                
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 card-hover flex flex-col h-full">
-                    <div class="mb-6">
-                        <i class="fa-solid fa-leaf text-3xl text-green-600 mb-4"></i>
-                        <h3 class="text-xl font-bold text-brandDark mb-2">AI Crop Recommendation</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Developed an AI-powered system that analyzes soil nutrients (NPK, pH) and seasonal data to recommend high-yielding crops for farmers. Engineered offline-first functionality for remote access.
-                        </p>
+            <div class="bg-brand-card rounded border border-slate-800 overflow-hidden flex flex-col justify-between shadow-lg">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-white">AI Crop Recommendation Architecture</h3>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-3 py-1 rounded font-semibold tracking-wider">SIH Project</span>
                     </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Python & ML</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Flutter</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Firebase</span>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        An intelligent algorithmic system designed to parse macrosoil matrix values alongside variable atmospheric data elements (temperature, rainfall, humidity) to securely compute optimized agricultural outputs in real time.
+                    </p>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Python</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Machine Learning</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Firebase</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Weather API</span>
                     </div>
                 </div>
+            </div>
 
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 card-hover flex flex-col h-full">
-                    <div class="mb-6">
-                        <i class="fa-solid fa-gamepad text-3xl text-purple-600 mb-4"></i>
-                        <h3 class="text-xl font-bold text-brandDark mb-2">Gamified Learning Env.</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Built a gamified platform with rewards and progress tracking. Upgraded to Android SDK 36. Integrated Supabase for real-time authentication and Google ML Kit.
-                        </p>
+            <div class="bg-brand-card rounded border border-slate-800 overflow-hidden flex flex-col justify-between shadow-lg">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-4">
+                        <h3 class="text-2xl font-bold text-white">Civic Ease Management Ecosystem</h3>
                     </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Flutter & Dart</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Supabase</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Google ML Kit</span>
+                    <p class="text-slate-300 text-base leading-relaxed mb-6">
+                        A robust, reporting environment optimizing civil complaint registration utilizing structured text parsing, spatial geolocation pipelines, and integrated imagery feeds to map operational infrastructure tracking points.
+                    </p>
+                </div>
+                <div class="p-6 pt-0">
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Python</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">MySQL</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">REST APIs</span>
+                        <span class="text-xs text-slate-400 bg-brand-dark border border-slate-800 px-2.5 py-1 rounded">Google Maps API</span>
                     </div>
                 </div>
-
-                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-200 card-hover flex flex-col h-full">
-                    <div class="mb-6">
-                        <i class="fa-solid fa-shield-halved text-3xl text-blue-600 mb-4"></i>
-                        <h3 class="text-xl font-bold text-brandDark mb-2">Data Download Alert</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">
-                            Developed a Data Download Duplication Alert System to identify and manage duplicate file downloads efficiently. Implemented MD5 & SHA-256 hashing algorithms to prevent redundant storage.
-                        </p>
-                    </div>
-                    <div class="mt-auto pt-6 border-t border-gray-200/60 flex flex-wrap gap-1.5">
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">Python</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">SQLite</span>
-                        <span class="text-[11px] font-medium text-gray-500 bg-white px-2.5 py-1 rounded-md border border-gray-200">MD5 / SHA-256</span>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
 
-    <section class="py-24 max-w-6xl mx-auto px-6">
-        <h2 class="section-heading">Certifications & Achievements</h2>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
-                    <span><strong>Microsoft Azure Fundamentals</strong> (AZ-900)</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
-                    <span><strong>AWS Cloud Foundations</strong></span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
-                    <span><strong>CISCO Networking Essentials</strong> & Basics</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
-                    <span><strong>Simplilearn</strong> - Machine Learning Certificate</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-certificate text-brandPrimary mt-1"></i>
-                    <span><strong>NPTEL</strong> - Software Testing Certificate</span>
-                </li>
-            </ul>
-            <ul class="space-y-4">
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-trophy text-yellow-500 mt-1"></i>
-                    <span><strong>Smart India Hackathon 2025</strong> - Finalist Certificate</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-trophy text-yellow-500 mt-1"></i>
-                    <span><strong>Taiwan Hackathon</strong> - Certificate of Merit (Excellence)</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-medal text-brandPrimary mt-1"></i>
-                    <span><strong>International Conference</strong> - Participant (KIT)</span>
-                </li>
-                <li class="flex items-start gap-3 text-gray-700 text-sm">
-                    <i class="fa-solid fa-medal text-brandPrimary mt-1"></i>
-                    <span><strong>Deloitte</strong> - Data Analytics Simulation Certificate</span>
-                </li>
+        <div class="mt-12 bg-slate-900/40 p-6 rounded border border-slate-850 shadow-inner">
+            <h3 class="text-lg font-bold text-brand-accent mb-4 uppercase tracking-wide">Honors & Major Milestones</h3>
+            <ul class="space-y-3 text-base text-slate-300">
+                <li><i class="fas fa-medal text-amber-400 mr-2"></i> <strong>National Finalist</strong> — Smart India Hackathon 2025 at IIT Dhanbad.</li>
+                <li><i class="fas fa-certificate text-sky-400 mr-2"></i> <strong>International Recognition</strong> — Certified participant in the 21st DSP Creative Design Competition (Taiwan Hackathon).</li>
+                <li><i class="fas fa-code-branch text-indigo-400 mr-2"></i> <strong>Technical Training</strong> — Completed deep-dive professional Web Development workshops.</li>
             </ul>
         </div>
     </section>
 
-    <footer id="contact" class="bg-brandDark text-white py-16 border-t border-gray-800 mt-10">
-        <div class="max-w-6xl mx-auto px-6 text-center">
-            <h2 class="text-3xl font-bold mb-6">Let's Connect</h2>
-            <p class="text-gray-400 mb-8 max-w-xl mx-auto text-sm">
-                Currently open for new opportunities in Software Engineering, Cloud Architecture, and Web Development. 
-            </p>
+    <section id="certifications" class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-slate-800">
+        <h2 class="text-3xl font-bold text-white mb-12"><i class="fas fa-award text-brand-accent mr-3"></i>Verified Professional Credentials</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 text-base">
             
-            <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-10">
-                <a href="mailto:andrewsdavidnov@gmail.com" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 w-full sm:w-auto justify-center">
-                    <i class="fa-solid fa-envelope text-brandPrimary"></i> andrewsdavidnov@gmail.com
-                </a>
-                <a href="tel:+917010809105" class="px-6 py-3 bg-gray-800 hover:bg-gray-700 rounded-lg text-sm font-medium transition-colors flex items-center gap-2 w-full sm:w-auto justify-center">
-                    <i class="fa-solid fa-phone text-green-400"></i> +91 70108 09105
-                </a>
+            <div class="p-5 bg-brand-card rounded border border-slate-800 hover:border-slate-700 transition duration-300 shadow-sm">
+                <span class="text-xs font-semibold text-brand-accent tracking-widest block uppercase mb-1">NPTEL</span>
+                <h4 class="font-bold text-white text-lg">Data Structures & Algorithms in Java</h4>
+                <p class="text-sm text-slate-400 mt-2">Specializations: Software Testing & Food Science</p>
             </div>
 
-            <div class="flex justify-center gap-6 mb-12">
-                <a href="https://github.com/Andrewsdavid2005" target="_blank" class="text-gray-400 hover:text-white text-xl transition-colors"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/andrews-gnana-selvin-d/" target="_blank" class="text-gray-400 hover:text-blue-500 text-xl transition-colors"><i class="fa-brands fa-linkedin"></i></a>
+            <div class="p-5 bg-brand-card rounded border border-slate-800 hover:border-slate-700 transition duration-300 shadow-sm">
+                <span class="text-xs font-semibold text-brand-accent tracking-widest block uppercase mb-1">Microsoft</span>
+                <h4 class="font-bold text-white text-lg">Azure Fundamentals (AZ-900)</h4>
+                <p class="text-sm text-slate-400 mt-2">Validation of cloud system operations and infrastructure concepts.</p>
             </div>
 
-            <p class="text-gray-500 text-xs">
-                &copy; 2026 Andrews GnanaSelvin D. All rights reserved.
-            </p>
+            <div class="p-5 bg-brand-card rounded border border-slate-800 hover:border-slate-700 transition duration-300 shadow-sm">
+                <span class="text-xs font-semibold text-brand-accent tracking-widest block uppercase mb-1">Amazon Web Services</span>
+                <h4 class="font-bold text-white text-lg">AWS Cloud Foundations</h4>
+                <p class="text-sm text-slate-400 mt-2">Comprehensive core architectural frameworks execution matrix.</p>
+            </div>
+
+            <div class="p-5 bg-brand-card rounded border border-slate-800 hover:border-slate-700 transition duration-300 shadow-sm">
+                <span class="text-xs font-semibold text-brand-accent tracking-widest block uppercase mb-1">Deloitte</span>
+                <h4 class="font-bold text-white text-lg">Data Analytics Simulation</h4>
+                <p class="text-sm text-slate-400 mt-2">Practical corporate structural database analysis optimization.</p>
+            </div>
+
+            <div class="p-5 bg-brand-card rounded border border-slate-800 hover:border-slate-700 transition duration-300 shadow-sm">
+                <span class="text-xs font-semibold text-brand-accent tracking-widest block uppercase mb-1">Cisco Systems</span>
+                <h4 class="font-bold text-white text-lg">Networking Essentials Framework</h4>
+                <p class="text-sm text-slate-400 mt-2">Addressing verification patterns, basic hardware routing, and system troubleshooting.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="bg-brand-dark border-t border-slate-900 py-10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between text-sm text-brand-textMuted tracking-wider">
+            <p class="italic">&copy; 2026 Keerthana G. Portfolio Framework.</p>
+            <div class="flex space-x-4 mt-2 md:mt-0">
+                <a href="https://github.com/keerthana242" target="_blank" class="hover:text-white transition">GitHub</a>
+                <a href="https://www.linkedin.com/in/keerthana-g-gurueswaran-0202922a6/" target="_blank" class="hover:text-white transition">LinkedIn</a>
+            </div>
         </div>
     </footer>
 
